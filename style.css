@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif; /* Replace 'Arial' with your desired font */
+    color: #ffffff; /* White text color */
+}
+
+a {
+    color: #5151d2; /* Midnight blue color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* ... Rest of the CSS code ... */
+
+
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(path/to/waves.png); /* Replace with the path to your wave background image */
+    background-color: #000033; /* Dark blue color */
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000033; /* Dark blue color */
+    padding: 10px;
+}
+
+.tab {
+    color: #ffffff; /* White color */
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tab.active {
+    background-color: #21215e; /* Darker blue color for active tab */
+    color: #ffffff; /* White text color for active tab */
+}
+
+/* ... Rest of the CSS code ... */
+
+.frames {
+    background-color: #21215e; /* Light gray color for frames */
+    padding: 20px;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: calc(100% - 40px); /* Adjust the height of frames to fit within the content area */
+}
+
+.frame {
+    display: none;
+    width: 100%; /* Set the width of frames to match the content width */
+}
+
+.frame.active {
+    display: block;
+}
+
+/* ... Rest of the CSS code ... */
